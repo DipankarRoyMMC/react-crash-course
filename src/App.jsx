@@ -1,17 +1,14 @@
 import React from "react";
+import Content from "./components/Content/Content";
+import Footer from "./components/Footer/Footer";
+import Header from "./components/Header/Header";
 
 const App = () => {
-  const handleNameChanged = () => {
-    const names = ["Dipankar", "Abir", "Sumon"];
-    const int = Math.floor(Math.random() * 3);
-    return names[int];
-  };
-
   return (
-    <div>
-      <h1 className="text-orange-500 text-3xl text-center">
-        Hello {handleNameChanged()}
-      </h1>
+    <div className="text-center">
+      <Header></Header>
+      <Content></Content>
+      <Footer></Footer>
     </div>
   );
 };
