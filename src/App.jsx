@@ -1,14 +1,11 @@
 import React from "react";
-import Content from "./components/Content/Content";
-import Footer from "./components/Footer/Footer";
-import Header from "./components/Header/Header";
+import { RouterProvider } from "react-router-dom";
+import router from "./router/Routers";
 
 const App = () => {
   return (
     <div className="text-center">
-      <Header></Header>
-      <Content></Content>
-      <Footer></Footer>
+      <RouterProvider router={router}></RouterProvider>
     </div>
   );
 };
